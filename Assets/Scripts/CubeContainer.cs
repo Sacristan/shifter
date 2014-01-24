@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿//FIRST line modified
+
+using UnityEngine;
 using System.Collections;
 
 public class CubeContainer : MonoBehaviour {
