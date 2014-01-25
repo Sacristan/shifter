@@ -35,18 +35,17 @@ public class Character : MonoBehaviour {
 	}
 
 	private bool Jump() {
-		if (Input.GetButtonDown ("Jump") && (jumpCount < 2 || lastFrameY == this.transform.position.y) ) {
+		if (Input.GetButtonDown ("Jump") && jumpCount < 2) {
 			jumpCount++;
 			return true;
-		} 
+		}
 		else{
-			jumpCount = 0;
 			return false;
-		} 
+		}
 	}
 
-	public void LateUpdate() {
-		lastFrameY = transform.position.y;
-
+	void OnCollisionStay(Collision collision) {
+		Debug.Log (jumpCount);
+		jumpCount = 0;
 	}
 }
