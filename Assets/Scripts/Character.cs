@@ -10,23 +10,43 @@ public class Character : MonoBehaviour {
 	private Vector3 pos = Vector3.zero;
 	private Vector2 move = Vector2.zero;
 	private Rigidbody2D rig2D;
-
+	private int jumpCount = 0;
+	private float lastFrameY;
 	// Use this for initialization
 	void Awake () {
 		rig2D = this.GetComponent<Rigidbody2D> ();
 		correctedSpeed = speed * 100;
+		lastFrameY = transform.position.y;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+
 
 		pos = transform.position;
 		//pos.x += Input.GetAxis ("Horizontal")*Time.deltaTime * speed;
 
 		pos.z = 0;
 		transform.position = pos;
-		move = new Vector2 (Input.GetAxis("Horizontal")*Time.deltaTime*correctedSpeed,(Input.GetButtonDown("Jump") ? jumpStrength:0));
+		move = new Vector2 (Input.GetAxis("Horizontal")*Time.deltaTime*correctedSpeed,(Jump() ? jumpStrength:0));
 		rig2D.AddForce(move);
+
+	}
+
+	private bool Jump() {
+		if (Input.GetButtonDown ("Jump") && (jumpCount < 2 || lastFrameY == this.transform.position.y) ) {
+			jumpCount++;
+			return true;
+		} 
+		else{
+			jumpCount = 0;
+			return false;
+		} 
+	}
+
+	public void LateUpdate() {
+		lastFrameY = transform.position.y;
 
 	}
 }
