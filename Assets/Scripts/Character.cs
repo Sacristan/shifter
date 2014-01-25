@@ -21,7 +21,7 @@ public class Character : MonoBehaviour {
 	void Update () {
 
 		pos = transform.position;
-		pos.x += Input.GetAxis ("Horizontal")*Time.deltaTime * speed;
+		//pos.x += Input.GetAxis ("Horizontal")*Time.deltaTime * speed;
 
 		pos.z = 0;
 		transform.position = pos;
