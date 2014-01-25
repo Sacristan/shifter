@@ -8,11 +8,12 @@ public class Chunk : MonoBehaviour {
 	public GameObject master;
 
 	public void Start() {
+		int getBGLayer = LayerMask.NameToLayer ("Background");
 		Random.seed = master.GetComponent<CubeContainer>().seed;
 		foreach (MeshRenderer MRenderer in this.GetComponentsInChildren<MeshRenderer>()) {
-
-			MRenderer.material = materials[Random.Range(0,materials.Length)];
-		
+			if(MRenderer.gameObject.layer != getBGLayer) {
+				MRenderer.material = materials[Random.Range(0,materials.Length)];
+			}
 		}
 	}
 

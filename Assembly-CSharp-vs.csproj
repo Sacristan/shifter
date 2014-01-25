@@ -46,11 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AI\Actions\ChasePlayer.cs" />
      <Compile Include="Assets\AI\Scripts\AIDamageController.cs" />
      <Compile Include="Assets\Scripts\Cam.cs" />
      <Compile Include="Assets\Scripts\Character.cs" />
      <Compile Include="Assets\Scripts\Chunk.cs" />
      <Compile Include="Assets\Scripts\CubeContainer.cs" />
+     <Compile Include="Assets\Scripts\MountainSpawner.cs" />
+     <Compile Include="Assets\Scripts\Parallax.cs" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshContourShader.shader" />

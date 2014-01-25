@@ -31,7 +31,9 @@ public class Character : MonoBehaviour {
 		transform.position = pos;
 		move = new Vector2 (Input.GetAxis("Horizontal")*Time.deltaTime*correctedSpeed,(Jump() ? jumpStrength:0));
 		rig2D.AddForce(move);
-
+		Vector3 velocity = rig2D.velocity;
+		velocity.x = Mathf.Clamp (rig2D.velocity.x,-10F, 10F);
+		rig2D.velocity = velocity;
 	}
 
 	private bool Jump() {
