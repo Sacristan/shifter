@@ -12,7 +12,8 @@ public class Chunk : MonoBehaviour {
 		foreach (MeshRenderer MRenderer in this.GetComponentsInChildren<MeshRenderer>()) {
 
 			MRenderer.material = materials[Random.Range(0,materials.Length)];
-
+		
 		}
 	}
+
 }
