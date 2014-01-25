@@ -9,12 +9,12 @@ public class Character : MonoBehaviour {
 	private float correctedSpeed;
 	private Vector3 pos = Vector3.zero;
 	private Vector2 move = Vector2.zero;
-	private Rigidbody2D rig2D;
+	private Rigidbody rig2D;
 	private int jumpCount = 0;
 	private float lastFrameY;
 	// Use this for initialization
 	void Awake () {
-		rig2D = this.GetComponent<Rigidbody2D> ();
+		rig2D = this.GetComponent<Rigidbody> ();
 		correctedSpeed = speed * 100;
 		lastFrameY = transform.position.y;
 	}
@@ -35,7 +35,7 @@ public class Character : MonoBehaviour {
 	}
 
 	private bool Jump() {
-		if (Input.GetButtonDown ("Jump") && jumpCount < 2) {
+		if (Input.GetButtonDown ("Jump") && jumpCount < 1) {
 			jumpCount++;
 			return true;
 		}
@@ -45,7 +45,9 @@ public class Character : MonoBehaviour {
 	}
 
 	void OnCollisionStay(Collision collision) {
-		Debug.Log (jumpCount);
+		jumpCount = 0;
+	}
+	void OnCollisionEnter(Collision collision) {
 		jumpCount = 0;
 	}
 }
