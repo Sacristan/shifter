@@ -135,9 +135,9 @@ MonoBehaviour:
       /><field type="RAIN.Memory.BasicMemory" reference="1" id="_workingMemory" childrenvisible="False"
       /><field type="RAIN.Minds.BasicMind" reference="2" id="_mind" childrenvisible="False"
       /><field type="RAIN.Motion.BasicMotor" reference="3" id="_motor" childrenvisible="False"
-      /><field type="RAIN.Animation.BasicAnimator" reference="6" id="_animator" childrenvisible="True"
+      /><field type="RAIN.Animation.BasicAnimator" reference="6" id="_animator" childrenvisible="False"
       /><field type="RAIN.Navigation.BasicNavigator" reference="7" id="_navigator"
-      childrenvisible="False" /><field type="RAIN.Perception.BasicSenses" reference="8"
+      childrenvisible="True" /><field type="RAIN.Perception.BasicSenses" reference="8"
       id="_senses" childrenvisible="False" /><field type="System.Collections.Generic.List"
       id="_customElements" elementtype="RAIN.Core.CustomAIElement" childrenvisible="False"
       /></reference><reference type="RAIN.Memory.BasicMemory" refcount="1" id="1"><field
@@ -147,17 +147,17 @@ MonoBehaviour:
       type="RAIN.BehaviorTrees.BTAsset" id="behaviorTreeAsset" gameobject="1" /><field
       type="System.Collections.Generic.List" id="behaviorTreeBindings" elementtype="RAIN.BehaviorTrees.BTAssetBinding"
       /></reference><reference type="RAIN.Motion.BasicMotor" refcount="1" id="3"><field
-      type="RAIN.Motion.MoveLookTarget" reference="4" id="moveTarget" childrenvisible="True"
+      type="RAIN.Motion.MoveLookTarget" reference="4" id="moveTarget" childrenvisible="False"
       /><field type="RAIN.Motion.MoveLookTarget" reference="5" id="faceTarget" childrenvisible="True"
       /><field value="1" type="System.Single" id="defaultSpeed" /><field value="0"
-      type="System.Single" id="defaultRotationSpeed" /><field value="0.1" type="System.Single"
+      type="System.Single" id="defaultRotationSpeed" /><field value="0.9" type="System.Single"
       id="defaultCloseEnoughDistance" /><field value="0.001" type="System.Single"
       id="defaultCloseEnoughAngle" /><field value="90" type="System.Single" id="defaultFaceBeforeMoveAngle"
       /><field value="0.5" type="System.Single" id="defaultStepUpHeight" /><field
       value="False" type="System.Boolean" id="allow3DMovement" /><field value="False"
-      type="System.Boolean" id="allow3DRotation" /><field value="True" type="System.Boolean"
+      type="System.Boolean" id="allow3DRotation" /><field value="False" type="System.Boolean"
       id="validPathRequired" /></reference><reference type="RAIN.Motion.MoveLookTarget"
-      refcount="1" id="4"><field value="0.1" type="System.Single" id="closeEnoughDistance"
+      refcount="1" id="4"><field value="0" type="System.Single" id="closeEnoughDistance"
       /><field value="None" type="RAIN.Motion.MoveLookTarget+MoveLookTargetType" id="_targetType"
       /><field type="UnityEngine.Transform" id="_transformTarget" gameobject="-1"
       /><field type="RAIN.Core.Kinematic" reference="-1" id="_kinematicTarget" /><field
