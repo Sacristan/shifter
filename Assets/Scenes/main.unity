@@ -106,7 +106,7 @@ MonoBehaviour:
   seed: 90
   maxHeight: 5
   Chunks:
-  - {fileID: 100078, guid: 66fd40b0ea598b443a265d992bdca292, type: 2}
+  - {fileID: 100066, guid: 0e00e743635bd20478567440e0f0a4d6, type: 2}
 --- !u!4 &37097593
 Transform:
   m_ObjectHideFlags: 0
@@ -393,6 +393,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: Chunks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -421,6 +425,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: Chunks.Array.data[1]
+      value: 
+      objectReference: {fileID: 100066, guid: 0e00e743635bd20478567440e0f0a4d6, type: 2}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: Chunks.Array.data[0]
+      value: 
+      objectReference: {fileID: 100066, guid: 0e00e743635bd20478567440e0f0a4d6, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
   m_RootGameObject: {fileID: 37097591}
