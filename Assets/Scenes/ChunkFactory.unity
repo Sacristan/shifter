@@ -1556,6 +1556,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1294707004}
+  - 114: {fileID: 1294707005}
   m_Layer: 0
   m_Name: ChunkDemo
   m_TagString: Untagged
@@ -1613,6 +1614,17 @@ Transform:
   - {fileID: 1423410182}
   - {fileID: 1180629836}
   m_Father: {fileID: 0}
+--- !u!114 &1294707005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1294707003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75193ae8e42b7e643832ed95153bd7b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1304040646
 GameObject:
   m_ObjectHideFlags: 0
