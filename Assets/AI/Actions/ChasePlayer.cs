@@ -31,7 +31,7 @@ public class ChasePlayer : RAINAction
 			
 		}
 		
-		return ActionResult.RUNNING;
+		return ActionResult.SUCCESS;
     }
 
     public override void Stop(AI ai)
