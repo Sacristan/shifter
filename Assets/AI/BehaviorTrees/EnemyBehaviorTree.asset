@@ -13,8 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dataSerializer:
     _serializedData: <scriptableobject version="1.0" type="RAIN.BehaviorTrees.BTAsset"><fields><field
-      value="&lt;behaviortree name=&quot;EnemyBehaviorTree&quot;&gt;&#xD;&#xA;  &lt;sequencer
-      name=&quot;root&quot;&gt;&lt;/sequencer&gt;&#xD;&#xA;&lt;/behaviortree&gt;"
+      value="&lt;behaviortree version=&quot;1.1&quot; repeatuntil=&quot;&quot; name=&quot;EnemyBehaviorTree&quot;&gt;&lt;sequencer
+      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; name=&quot;root&quot;&gt;&lt;detect
+      sensor=&quot;&amp;quot;Visual Sensor&amp;quot;&quot; repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;detect&quot; entityobjectvariable=&quot;target&quot;
+      aspectvariable=&quot;&quot; aspectobjectvariable=&quot;&quot; aspect=&quot;&amp;quot;Player&amp;quot;&quot;
+      /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
+      parameters=&quot;&quot; namespace=&quot;(global)&quot; name=&quot;chasePlayer&quot;
+      classname=&quot;ChasePlayer&quot; /&gt;&lt;/sequencer&gt;&lt;/behaviortree&gt;"
       type="System.String" id="treeData" /><field type="System.Array" id="treeBindings"
       elementtype="System.String" /></fields><references /></scriptableobject>
     _serializedGameObjects: []
