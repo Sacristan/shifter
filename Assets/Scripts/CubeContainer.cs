@@ -8,7 +8,7 @@ public class CubeContainer : MonoBehaviour {
     public int Levellength = 20;
     public int seed = 10;
     public float maxHeight = 5.0F;
-    public GameObject[] Cubes;
+    public GameObject[] Chunks;
 
 
 
@@ -16,20 +16,23 @@ public class CubeContainer : MonoBehaviour {
 	void Start () {
 
         Random.seed = seed;
-
+		Vector3 LastChunkLastCubePos = Vector3.zero;
         for (int i = 0; i < Levellength; i++)
         {
 
-            Vector3 position = Vector3.right * i;
+			Vector3 position = LastChunkLastCubePos;
             position += Vector3.up * Random.Range(0.0F, maxHeight);
-            GameObject prop = Instantiate(Cubes[Random.Range(0, Cubes.Length)], position, Quaternion.identity) as GameObject;
+			GameObject prop = Instantiate(Chunks[Random.Range(0, Chunks.Length)], position, Quaternion.identity) as GameObject;
             prop.transform.parent = transform;
+			LastChunkLastCubePos += Vector3.right*(getChunkWidth(prop));
 
         }
 
 	}
 	
 	private float getChunkWidth(GameObject chunk) {
-		return chunk.GetComponent<Chunk> ().getWidth();
+
+		return chunk.GetComponent<Chunk>().width;
+
 	}
 }
