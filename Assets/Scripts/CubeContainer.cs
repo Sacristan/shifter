@@ -29,10 +29,7 @@ public class CubeContainer : MonoBehaviour {
 
 	}
 	
-	// Update is called once per frame
-	void Update () {
-
-        
-
+	private float getChunkWidth(GameObject chunk) {
+		return chunk.GetComponent<Chunk> ().getWidth();
 	}
 }
