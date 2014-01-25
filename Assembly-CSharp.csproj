@@ -54,9 +54,8 @@
      <Compile Include="Assets\Scripts\Chunk.cs" />
      <Compile Include="Assets\Scripts\CubeContainer.cs" />
      <Compile Include="Assets\Scripts\FPSCounter.cs" />
-     <Compile Include="Assets\Scripts\MountainSpawner.cs" />
+     <Compile Include="Assets\Scripts\MoveWaypointsRelativelyToItsParent.cs" />
      <Compile Include="Assets\Scripts\Parallax.cs" />
-     <Compile Include="Assets\Scripts\WaypointPosUpdateController.cs" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
