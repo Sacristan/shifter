@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{9133C0A9-E2F2-BE7D-95E9-E054012589C0}</ProjectGuid>
+	<ProjectGuid>{E252C1E0-D9D2-328F-B17E-2F27F8BE3D35}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -55,6 +55,24 @@
      <None Include="Assets\RAIN\Editor\Shaders\WaypointShader.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\VisualSensorRingShader.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
+ <Reference Include="RAIN">
+ <HintPath>Assets\RAIN\RAIN.dll</HintPath>
+ </Reference>
+ <Reference Include="RAINMetaform">
+ <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
+ </Reference>
+ <Reference Include="AetherUnity">
+ <HintPath>Assets\RAIN\Editor\AetherUnity.dll</HintPath>
+ </Reference>
+ <Reference Include="LegionRestModel">
+ <HintPath>Assets\RAIN\Editor\LegionRestModel.dll</HintPath>
+ </Reference>
+ <Reference Include="RAINEditor">
+ <HintPath>Assets\RAIN\Editor\RAINEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="RAINUpdater">
+ <HintPath>Assets\RAIN\Editor\RAINUpdater.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:\Program Files (x86)\Unity\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -73,28 +91,10 @@
  <Reference Include="UnityEditor.Android.Extensions">
  <HintPath>C:\Program Files (x86)\Unity\Editor\Data\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="RAINUpdater">
- <HintPath>Assets\RAIN\Editor\RAINUpdater.dll</HintPath>
- </Reference>
- <Reference Include="LegionRestModel">
- <HintPath>Assets\RAIN\Editor\LegionRestModel.dll</HintPath>
- </Reference>
- <Reference Include="RAIN">
- <HintPath>Assets\RAIN\RAIN.dll</HintPath>
- </Reference>
- <Reference Include="RAINEditor">
- <HintPath>Assets\RAIN\Editor\RAINEditor.dll</HintPath>
- </Reference>
- <Reference Include="AetherUnity">
- <HintPath>Assets\RAIN\Editor\AetherUnity.dll</HintPath>
- </Reference>
- <Reference Include="RAINMetaform">
- <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-vs.csproj">
-      <Project>{82938301-3DED-A1BF-A889-30B21A7B011F}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+      <Project>{2E2541DE-9C1B-2785-4DFC-BF22DF425C2D}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
