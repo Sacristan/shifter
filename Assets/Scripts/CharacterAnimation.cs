@@ -12,6 +12,7 @@ public class CharacterAnimation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		animator.SetFloat("speedx", this.rigidbody.velocity.x);
+		animator.SetFloat("speedy", this.rigidbody.velocity.y);
 	}
 
 }
