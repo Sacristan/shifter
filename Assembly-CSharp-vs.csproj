@@ -58,7 +58,9 @@
      <Compile Include="Assets\Scripts\MoveWaypointsRelativelyToItsParent.cs" />
      <Compile Include="Assets\Scripts\Parallax.cs" />
      <Compile Include="Assets\Scripts\PhaseElements.cs" />
+     <Compile Include="Assets\Scripts\Start.cs" />
      <Compile Include="Assets\Scripts\cloud.cs" />
+     <Compile Include="Assets\Scripts\flicker.cs" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshContourShader.shader" />

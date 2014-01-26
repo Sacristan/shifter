@@ -4428,7 +4428,7 @@ MonoBehaviour:
       id="_useUnityMessages" /><field type="RAIN.Entities.Entity" reference="0" id="_entity"
       /></fields><references><reference type="RAIN.Entities.Entity" refcount="1" id="0"><field
       value="True" type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
-      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="-1"
+      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="0"
       /><field type="System.Collections.Generic.List" id="_aspects" elementtype="RAIN.Entities.Aspects.RAINAspect"><field
       type="RAIN.Entities.Aspects.VisualAspect" reference="1" id="element0" /></field><field
       type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Entities.Elements.CustomEntityElement"
@@ -4441,7 +4441,8 @@ MonoBehaviour:
       /><field value="0.1" type="System.Single" id="_size" /><field value="0,0,0"
       type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
       id="_angleOffset" /></reference></references></component>
-    _serializedGameObjects: []
+    _serializedGameObjects:
+    - {fileID: 100012}
     _serializedCustomData: []
 --- !u!114 &11400026
 MonoBehaviour:
@@ -4604,7 +4605,7 @@ MonoBehaviour:
       id="_useUnityMessages" /><field type="RAIN.Entities.Entity" reference="0" id="_entity"
       /></fields><references><reference type="RAIN.Entities.Entity" refcount="1" id="0"><field
       value="True" type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
-      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="-1"
+      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="0"
       /><field type="System.Collections.Generic.List" id="_aspects" elementtype="RAIN.Entities.Aspects.RAINAspect"><field
       type="RAIN.Entities.Aspects.VisualAspect" reference="1" id="element0" /></field><field
       type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Entities.Elements.CustomEntityElement"
@@ -4617,7 +4618,8 @@ MonoBehaviour:
       /><field value="0.1" type="System.Single" id="_size" /><field value="0,0,0"
       type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
       id="_angleOffset" /></reference></references></component>
-    _serializedGameObjects: []
+    _serializedGameObjects:
+    - {fileID: 100060}
     _serializedCustomData: []
 --- !u!114 &11400042
 MonoBehaviour:
@@ -4636,7 +4638,7 @@ MonoBehaviour:
       id="_useUnityMessages" /><field type="RAIN.Entities.Entity" reference="0" id="_entity"
       /></fields><references><reference type="RAIN.Entities.Entity" refcount="1" id="0"><field
       value="True" type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
-      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="-1"
+      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="0"
       /><field type="System.Collections.Generic.List" id="_aspects" elementtype="RAIN.Entities.Aspects.RAINAspect"><field
       type="RAIN.Entities.Aspects.VisualAspect" reference="1" id="element0" /></field><field
       type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Entities.Elements.CustomEntityElement"
@@ -4649,7 +4651,8 @@ MonoBehaviour:
       /><field value="0.1" type="System.Single" id="_size" /><field value="0,0,0"
       type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
       id="_angleOffset" /></reference></references></component>
-    _serializedGameObjects: []
+    _serializedGameObjects:
+    - {fileID: 100078}
     _serializedCustomData: []
 --- !u!114 &11400044
 MonoBehaviour:
@@ -4668,7 +4671,7 @@ MonoBehaviour:
       id="_useUnityMessages" /><field type="RAIN.Entities.Entity" reference="0" id="_entity"
       /></fields><references><reference type="RAIN.Entities.Entity" refcount="1" id="0"><field
       value="True" type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
-      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="-1"
+      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="0"
       /><field type="System.Collections.Generic.List" id="_aspects" elementtype="RAIN.Entities.Aspects.RAINAspect"><field
       type="RAIN.Entities.Aspects.VisualAspect" reference="1" id="element0" /></field><field
       type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Entities.Elements.CustomEntityElement"
@@ -4681,7 +4684,8 @@ MonoBehaviour:
       /><field value="0.1" type="System.Single" id="_size" /><field value="0,0,0"
       type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
       id="_angleOffset" /></reference></references></component>
-    _serializedGameObjects: []
+    _serializedGameObjects:
+    - {fileID: 100064}
     _serializedCustomData: []
 --- !u!114 &11400046
 MonoBehaviour:
@@ -4700,7 +4704,7 @@ MonoBehaviour:
       id="_useUnityMessages" /><field type="RAIN.Entities.Entity" reference="0" id="_entity"
       /></fields><references><reference type="RAIN.Entities.Entity" refcount="1" id="0"><field
       value="True" type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
-      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="-1"
+      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="0"
       /><field type="System.Collections.Generic.List" id="_aspects" elementtype="RAIN.Entities.Aspects.RAINAspect"><field
       type="RAIN.Entities.Aspects.VisualAspect" reference="1" id="element0" /></field><field
       type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Entities.Elements.CustomEntityElement"
@@ -4713,7 +4717,8 @@ MonoBehaviour:
       /><field value="0.1" type="System.Single" id="_size" /><field value="0,0,0"
       type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
       id="_angleOffset" /></reference></references></component>
-    _serializedGameObjects: []
+    _serializedGameObjects:
+    - {fileID: 100062}
     _serializedCustomData: []
 --- !u!114 &11400048
 MonoBehaviour:
@@ -4732,7 +4737,7 @@ MonoBehaviour:
       id="_useUnityMessages" /><field type="RAIN.Entities.Entity" reference="0" id="_entity"
       /></fields><references><reference type="RAIN.Entities.Entity" refcount="1" id="0"><field
       value="True" type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
-      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="-1"
+      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="0"
       /><field type="System.Collections.Generic.List" id="_aspects" elementtype="RAIN.Entities.Aspects.RAINAspect"><field
       type="RAIN.Entities.Aspects.VisualAspect" reference="1" id="element0" /></field><field
       type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Entities.Elements.CustomEntityElement"
@@ -4745,7 +4750,8 @@ MonoBehaviour:
       /><field value="0.1" type="System.Single" id="_size" /><field value="0,0,0"
       type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
       id="_angleOffset" /></reference></references></component>
-    _serializedGameObjects: []
+    _serializedGameObjects:
+    - {fileID: 100154}
     _serializedCustomData: []
 --- !u!114 &11400050
 MonoBehaviour:
@@ -4764,7 +4770,7 @@ MonoBehaviour:
       id="_useUnityMessages" /><field type="RAIN.Entities.Entity" reference="0" id="_entity"
       /></fields><references><reference type="RAIN.Entities.Entity" refcount="1" id="0"><field
       value="True" type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
-      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="-1"
+      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="0"
       /><field type="System.Collections.Generic.List" id="_aspects" elementtype="RAIN.Entities.Aspects.RAINAspect"><field
       type="RAIN.Entities.Aspects.VisualAspect" reference="1" id="element0" /></field><field
       type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Entities.Elements.CustomEntityElement"
@@ -4777,7 +4783,8 @@ MonoBehaviour:
       /><field value="0.1" type="System.Single" id="_size" /><field value="0,0,0"
       type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
       id="_angleOffset" /></reference></references></component>
-    _serializedGameObjects: []
+    _serializedGameObjects:
+    - {fileID: 100046}
     _serializedCustomData: []
 --- !u!1001 &100100000
 Prefab:
