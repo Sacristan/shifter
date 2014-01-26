@@ -11,12 +11,12 @@ public class Character : MonoBehaviour {
 	private Vector2 move = Vector2.zero;
 	private Rigidbody rig2D;
 	private int jumpCount = 0;
-	private float lastFrameY;
+
 	// Use this for initialization
 	void Awake () {
 		rig2D = this.GetComponent<Rigidbody> ();
 		correctedSpeed = speed * 100;
-		lastFrameY = transform.position.y;
+
 	}
 	
 	// Update is called once per frame
