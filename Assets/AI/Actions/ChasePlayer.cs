@@ -49,7 +49,6 @@ public class ChasePlayer : RAINAction
     }
 
 	private bool IsAtANavPoint(AI ai){
-		return false;
 //		RaycastHit hit;
 //		if (Physics.Raycast (ai.Body.transform.position, -Vector3.up, out hit, 5.0f)) {
 //			GameObject go = hit.collider.gameObject;
@@ -58,10 +57,12 @@ public class ChasePlayer : RAINAction
 //			WaypointRig[] wRigs = go.GetComponentsInChildren<WaypointRig>();
 //
 //			foreach(WaypointRig wRig in wRigs){
-//				ai.Navigator.IsAt(mlt);
+//				RAIN.Motion.MoveLookTarget mtl = RAIN.Utility.TypeConvert.ConvertValue<RAIN.Motion.MoveLookTarget>(wRig.WaypointSet.Waypoints[0].position);
+//				if(ai.Navigator.IsAt(mtl)) return true;
 //			}
 //			return false;
 //		}
+		return false;
 	}
 
 	private void  JumSeq(AI ai, GameObject target){
