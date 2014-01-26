@@ -19,27 +19,29 @@ MonoBehaviour:
       name=&quot;isAlive?&quot; constraint=&quot;health &amp;gt; 0&quot;&gt;&lt;expression
       returnvalue=&quot;success&quot; repeatuntil=&quot;&quot; name=&quot;resetTargetVar&quot;
       expression=&quot;target = null&quot; /&gt;&lt;parallel tiebreaker=&quot;fail&quot;
-      succeed=&quot;all&quot; repeatuntil=&quot;&quot; name=&quot;parallel&quot; fail=&quot;any&quot;&gt;&lt;sequencer
-      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; name=&quot;detectionSeq&quot;&gt;&lt;detect
+      succeed=&quot;all&quot; repeatuntil=&quot;&quot; name=&quot;parallel&quot; fail=&quot;any&quot;&gt;&lt;detect
       sensor=&quot;&amp;quot;Visual Sensor&amp;quot;&quot; repeatuntil=&quot;&quot;
-      priority=&quot;&quot; name=&quot;detectTarget&quot; entityobjectvariable=&quot;target&quot;
-      aspectvariable=&quot;&quot; aspectobjectvariable=&quot;&quot; aspect=&quot;&amp;quot;Player&amp;quot;&quot;
-      /&gt;&lt;/sequencer&gt;&lt;constraint repeatuntil=&quot;&quot; name=&quot;targetIsPresent&quot;
+      name=&quot;detectTarget&quot; entityobjectvariable=&quot;target&quot; aspectvariable=&quot;&quot;
+      aspectobjectvariable=&quot;&quot; aspect=&quot;&amp;quot;Player&amp;quot;&quot;
+      /&gt;&lt;constraint repeatuntil=&quot;&quot; name=&quot;targetIsPresent&quot;
       constraint=&quot;target != null&quot;&gt;&lt;action repeatuntil=&quot;&quot;
       parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;(global)&quot;
-      name=&quot;resetPatrolVars&quot; classname=&quot;ResetPatrolVars&quot; /&gt;&lt;action
-      repeatuntil=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot;
-      namespace=&quot;(global)&quot; name=&quot;chaseTarget&quot; classname=&quot;ChasePlayer&quot;
-      /&gt;&lt;/constraint&gt;&lt;constraint repeatuntil=&quot;&quot; name=&quot;targetNotPresent&quot;
-      constraint=&quot;target == null&quot;&gt;&lt;action repeatuntil=&quot;&quot;
+      name=&quot;resetPatrolVars&quot; classname=&quot;ResetPatrolVars&quot; /&gt;&lt;parallel
+      tiebreaker=&quot;fail&quot; succeed=&quot;all&quot; repeatuntil=&quot;&quot;
+      name=&quot;chaseRoutine&quot; fail=&quot;any&quot;&gt;&lt;action repeatuntil=&quot;&quot;
       parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;(global)&quot;
-      name=&quot;detectClosestChunk&quot; classname=&quot;DetectClosestChunk&quot;
-      /&gt;&lt;waypointpatrol waypointsetvariable=&quot;waypointPathToUse&quot; waypointactiontype=&quot;patrol&quot;
-      traversetype=&quot;loop&quot; traverseorder=&quot;forward&quot; repeatuntil=&quot;&quot;
-      pathtargetvariable=&quot;&quot; name=&quot;waypointpatrol&quot; movetargetvariable=&quot;patrolTarget&quot;&gt;&lt;action
-      repeatuntil=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot;
-      namespace=&quot;(global)&quot; name=&quot;movePatrol&quot; classname=&quot;PatrolMovement&quot;
-      /&gt;&lt;/waypointpatrol&gt;&lt;/constraint&gt;&lt;/parallel&gt;&lt;/constraint&gt;&lt;constraint
+      name=&quot;chaseTarget&quot; classname=&quot;ChasePlayer&quot; /&gt;&lt;/parallel&gt;&lt;/constraint&gt;&lt;constraint
+      repeatuntil=&quot;&quot; name=&quot;targetNotPresent&quot; constraint=&quot;target
+      == null&quot;&gt;&lt;action repeatuntil=&quot;&quot; parametervalues=&quot;&quot;
+      parameters=&quot;&quot; namespace=&quot;(global)&quot; name=&quot;detectClosestChunk&quot;
+      classname=&quot;DetectClosestChunk&quot; /&gt;&lt;waypointpatrol waypointsetvariable=&quot;waypointPathToUse&quot;
+      waypointactiontype=&quot;patrol&quot; traversetype=&quot;loop&quot; traverseorder=&quot;forward&quot;
+      repeatuntil=&quot;&quot; pathtargetvariable=&quot;&quot; name=&quot;waypointpatrol&quot;
+      movetargetvariable=&quot;patrolTarget&quot;&gt;&lt;parallel tiebreaker=&quot;fail&quot;
+      succeed=&quot;all&quot; repeatuntil=&quot;&quot; name=&quot;patrolRoutine&quot;
+      fail=&quot;any&quot;&gt;&lt;action repeatuntil=&quot;&quot; parametervalues=&quot;&quot;
+      parameters=&quot;&quot; namespace=&quot;(global)&quot; name=&quot;movePatrol&quot;
+      classname=&quot;PatrolMovement&quot; /&gt;&lt;/parallel&gt;&lt;/waypointpatrol&gt;&lt;/constraint&gt;&lt;/parallel&gt;&lt;/constraint&gt;&lt;constraint
       repeatuntil=&quot;&quot; name=&quot;isDead?&quot; constraint=&quot;health &amp;lt;=
       0&quot; /&gt;&lt;/parallel&gt;&lt;/behaviortree&gt;" type="System.String" id="treeData"
       /><field type="System.Array" id="treeBindings" elementtype="System.String" /></fields><references

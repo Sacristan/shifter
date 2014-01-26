@@ -47,10 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AI\Actions\ChasePlayer.cs" />
+     <Compile Include="Assets\AI\Actions\ChaseTargetJumpAction.cs" />
      <Compile Include="Assets\AI\Actions\DetectClosestChunk.cs" />
      <Compile Include="Assets\AI\Actions\PatrolMovement.cs" />
      <Compile Include="Assets\AI\Actions\ResetPatrolVars.cs" />
-     <Compile Include="Assets\AI\Scripts\AIDamageController.cs" />
+     <Compile Include="Assets\AI\Scripts\AIController.cs" />
      <Compile Include="Assets\Scripts\Cam.cs" />
      <Compile Include="Assets\Scripts\Character.cs" />
      <Compile Include="Assets\Scripts\CharacterAnimation.cs" />
@@ -64,6 +65,7 @@
      <Compile Include="Assets\Scripts\Start.cs" />
      <Compile Include="Assets\Scripts\cloud.cs" />
      <Compile Include="Assets\Scripts\flicker.cs" />
+     <Compile Include="Assets\iTween\Plugins\iTween.cs" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
