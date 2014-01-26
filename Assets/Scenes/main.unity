@@ -102,11 +102,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6c150a9b8ff3ff43b4b39314ea38776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Levellength: 5
+  Levellength: 20
   seed: 90
   maxHeight: 5
   phaseStyles:
-  - seed: 90
+  - seed: 3
     chunksTypes:
     - {fileID: 100066, guid: 0e00e743635bd20478567440e0f0a4d6, type: 2}
     - {fileID: 100090, guid: b7a927bbe4168c64c9b81f94bb4cfbaf, type: 2}
@@ -116,15 +116,6 @@ MonoBehaviour:
     - {fileID: 2100000, guid: c0778e363427193429f2e27d659d4dc5, type: 2}
     - {fileID: 2100000, guid: 9b562ded78eabaf47b5de0d45358561c, type: 2}
     - {fileID: 2100000, guid: d102cb59b1836d142908315f648ea8ce, type: 2}
-  - seed: 0
-    chunksTypes: []
-    terrainMaterials: []
-  - seed: 0
-    chunksTypes: []
-    terrainMaterials: []
-  - seed: 0
-    chunksTypes: []
-    terrainMaterials: []
 --- !u!4 &37097593
 Transform:
   m_ObjectHideFlags: 0
@@ -322,7 +313,7 @@ BoxCollider:
     type: 2}
   m_PrefabInternal: {fileID: 1572618741}
   m_GameObject: {fileID: 1080400926}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 4fb7090d74c5ea0449c2ca517ecc7de0, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -337,7 +328,7 @@ Rigidbody:
   m_GameObject: {fileID: 1080400926}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 2
   m_AngularDrag: .0500000007
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -370,7 +361,7 @@ SpriteRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: bab06dde77d98e742a781d8d1c837b20, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -536,7 +527,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
       propertyPath: phaseStyles.Array.size
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
       propertyPath: phaseStyles.Array.data[0].chunksTypes.Array.size
@@ -584,7 +575,7 @@ Prefab:
       objectReference: {fileID: 100066, guid: 0e00e743635bd20478567440e0f0a4d6, type: 2}
     - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
       propertyPath: phaseStyles.Array.data[0].seed
-      value: 90
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
       propertyPath: phaseStyles.Array.data[0].chunksTypes.Array.data[0]
@@ -726,6 +717,10 @@ Prefab:
       propertyPath: phaseStyles.Array.data[0].chunksTypes.Array.data[30]
       value: 
       objectReference: {fileID: 100066, guid: 0e00e743635bd20478567440e0f0a4d6, type: 2}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: Levellength
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
   m_RootGameObject: {fileID: 37097591}
@@ -879,6 +874,15 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1.79999995
       objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: d6d77aaf851accf4e8300b59b2172ef9, type: 2}
+      propertyPath: m_Drag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: d6d77aaf851accf4e8300b59b2172ef9, type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 4fb7090d74c5ea0449c2ca517ecc7de0,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 3300000, guid: d6d77aaf851accf4e8300b59b2172ef9, type: 2}
     - {fileID: 2300000, guid: d6d77aaf851accf4e8300b59b2172ef9, type: 2}

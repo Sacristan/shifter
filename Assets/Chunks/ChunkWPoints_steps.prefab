@@ -111,6 +111,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400012}
   - 65: {fileID: 6500000}
+  - 114: {fileID: 11400024}
   m_Layer: 0
   m_Name: 6Cubes
   m_TagString: Untagged
@@ -399,6 +400,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400046}
   - 65: {fileID: 6500002}
+  - 114: {fileID: 11400050}
   m_Layer: 0
   m_Name: 8Cubes2
   m_TagString: Untagged
@@ -517,6 +519,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400060}
   - 65: {fileID: 6500004}
+  - 114: {fileID: 11400040}
   m_Layer: 0
   m_Name: 6Cubes
   m_TagString: Untagged
@@ -533,6 +536,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400062}
   - 65: {fileID: 6500006}
+  - 114: {fileID: 11400046}
   m_Layer: 0
   m_Name: 16Cubes
   m_TagString: Untagged
@@ -549,6 +553,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400064}
   - 65: {fileID: 6500008}
+  - 114: {fileID: 11400044}
   m_Layer: 0
   m_Name: 8Cubes
   m_TagString: Untagged
@@ -669,6 +674,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400078}
   - 65: {fileID: 6500010}
+  - 114: {fileID: 11400042}
   m_Layer: 0
   m_Name: 6Cubes
   m_TagString: Untagged
@@ -787,7 +793,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 400092}
   - 114: {fileID: 11400022}
-  - 114: {fileID: 11400024}
   m_Layer: 0
   m_Name: ChunkWPoints_steps
   m_TagString: Untagged
@@ -1316,6 +1321,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400154}
   - 65: {fileID: 6500012}
+  - 114: {fileID: 11400048}
   m_Layer: 0
   m_Name: 6Cubes
   m_TagString: Untagged
@@ -4410,7 +4416,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100092}
+  m_GameObject: {fileID: 100012}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 220721487, guid: 8da89e8b4b3186d4fa9588ae08dc0e31, type: 3}
@@ -4581,6 +4587,198 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 928b63075a9a87e44ae8e5d5ec1cbb50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 220721487, guid: 8da89e8b4b3186d4fa9588ae08dc0e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _serializedData: <component version="1.0" type="RAIN.Entities.EntityRig"><fields><field
+      value="True" type="System.Boolean" id="_showVisual" /><field value="True" type="System.Boolean"
+      id="_useUnityMessages" /><field type="RAIN.Entities.Entity" reference="0" id="_entity"
+      /></fields><references><reference type="RAIN.Entities.Entity" refcount="1" id="0"><field
+      value="True" type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
+      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="-1"
+      /><field type="System.Collections.Generic.List" id="_aspects" elementtype="RAIN.Entities.Aspects.RAINAspect"><field
+      type="RAIN.Entities.Aspects.VisualAspect" reference="1" id="element0" /></field><field
+      type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Entities.Elements.CustomEntityElement"
+      childrenvisible="False" /><field value="0,0.6,0,1" type="UnityEngine.Color"
+      id="_aspectColor" /><field value="-0.5" type="System.Single" id="_outlineColorOffset"
+      /><field value="0.4" type="System.Single" id="_selectionColorOffset" /></reference><reference
+      type="RAIN.Entities.Aspects.VisualAspect" refcount="1" id="1"><field value="True"
+      type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
+      id="_aspectName" /><field type="UnityEngine.Transform" id="_mountPoint" gameobject="-1"
+      /><field value="0.1" type="System.Single" id="_size" /><field value="0,0,0"
+      type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
+      id="_angleOffset" /></reference></references></component>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+--- !u!114 &11400042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 220721487, guid: 8da89e8b4b3186d4fa9588ae08dc0e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _serializedData: <component version="1.0" type="RAIN.Entities.EntityRig"><fields><field
+      value="True" type="System.Boolean" id="_showVisual" /><field value="True" type="System.Boolean"
+      id="_useUnityMessages" /><field type="RAIN.Entities.Entity" reference="0" id="_entity"
+      /></fields><references><reference type="RAIN.Entities.Entity" refcount="1" id="0"><field
+      value="True" type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
+      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="-1"
+      /><field type="System.Collections.Generic.List" id="_aspects" elementtype="RAIN.Entities.Aspects.RAINAspect"><field
+      type="RAIN.Entities.Aspects.VisualAspect" reference="1" id="element0" /></field><field
+      type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Entities.Elements.CustomEntityElement"
+      childrenvisible="False" /><field value="0,0.6,0,1" type="UnityEngine.Color"
+      id="_aspectColor" /><field value="-0.5" type="System.Single" id="_outlineColorOffset"
+      /><field value="0.4" type="System.Single" id="_selectionColorOffset" /></reference><reference
+      type="RAIN.Entities.Aspects.VisualAspect" refcount="1" id="1"><field value="True"
+      type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
+      id="_aspectName" /><field type="UnityEngine.Transform" id="_mountPoint" gameobject="-1"
+      /><field value="0.1" type="System.Single" id="_size" /><field value="0,0,0"
+      type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
+      id="_angleOffset" /></reference></references></component>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+--- !u!114 &11400044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 220721487, guid: 8da89e8b4b3186d4fa9588ae08dc0e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _serializedData: <component version="1.0" type="RAIN.Entities.EntityRig"><fields><field
+      value="True" type="System.Boolean" id="_showVisual" /><field value="True" type="System.Boolean"
+      id="_useUnityMessages" /><field type="RAIN.Entities.Entity" reference="0" id="_entity"
+      /></fields><references><reference type="RAIN.Entities.Entity" refcount="1" id="0"><field
+      value="True" type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
+      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="-1"
+      /><field type="System.Collections.Generic.List" id="_aspects" elementtype="RAIN.Entities.Aspects.RAINAspect"><field
+      type="RAIN.Entities.Aspects.VisualAspect" reference="1" id="element0" /></field><field
+      type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Entities.Elements.CustomEntityElement"
+      childrenvisible="False" /><field value="0,0.6,0,1" type="UnityEngine.Color"
+      id="_aspectColor" /><field value="-0.5" type="System.Single" id="_outlineColorOffset"
+      /><field value="0.4" type="System.Single" id="_selectionColorOffset" /></reference><reference
+      type="RAIN.Entities.Aspects.VisualAspect" refcount="1" id="1"><field value="True"
+      type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
+      id="_aspectName" /><field type="UnityEngine.Transform" id="_mountPoint" gameobject="-1"
+      /><field value="0.1" type="System.Single" id="_size" /><field value="0,0,0"
+      type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
+      id="_angleOffset" /></reference></references></component>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+--- !u!114 &11400046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 220721487, guid: 8da89e8b4b3186d4fa9588ae08dc0e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _serializedData: <component version="1.0" type="RAIN.Entities.EntityRig"><fields><field
+      value="True" type="System.Boolean" id="_showVisual" /><field value="True" type="System.Boolean"
+      id="_useUnityMessages" /><field type="RAIN.Entities.Entity" reference="0" id="_entity"
+      /></fields><references><reference type="RAIN.Entities.Entity" refcount="1" id="0"><field
+      value="True" type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
+      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="-1"
+      /><field type="System.Collections.Generic.List" id="_aspects" elementtype="RAIN.Entities.Aspects.RAINAspect"><field
+      type="RAIN.Entities.Aspects.VisualAspect" reference="1" id="element0" /></field><field
+      type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Entities.Elements.CustomEntityElement"
+      childrenvisible="False" /><field value="0,0.6,0,1" type="UnityEngine.Color"
+      id="_aspectColor" /><field value="-0.5" type="System.Single" id="_outlineColorOffset"
+      /><field value="0.4" type="System.Single" id="_selectionColorOffset" /></reference><reference
+      type="RAIN.Entities.Aspects.VisualAspect" refcount="1" id="1"><field value="True"
+      type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
+      id="_aspectName" /><field type="UnityEngine.Transform" id="_mountPoint" gameobject="-1"
+      /><field value="0.1" type="System.Single" id="_size" /><field value="0,0,0"
+      type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
+      id="_angleOffset" /></reference></references></component>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+--- !u!114 &11400048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 220721487, guid: 8da89e8b4b3186d4fa9588ae08dc0e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _serializedData: <component version="1.0" type="RAIN.Entities.EntityRig"><fields><field
+      value="True" type="System.Boolean" id="_showVisual" /><field value="True" type="System.Boolean"
+      id="_useUnityMessages" /><field type="RAIN.Entities.Entity" reference="0" id="_entity"
+      /></fields><references><reference type="RAIN.Entities.Entity" refcount="1" id="0"><field
+      value="True" type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
+      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="-1"
+      /><field type="System.Collections.Generic.List" id="_aspects" elementtype="RAIN.Entities.Aspects.RAINAspect"><field
+      type="RAIN.Entities.Aspects.VisualAspect" reference="1" id="element0" /></field><field
+      type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Entities.Elements.CustomEntityElement"
+      childrenvisible="False" /><field value="0,0.6,0,1" type="UnityEngine.Color"
+      id="_aspectColor" /><field value="-0.5" type="System.Single" id="_outlineColorOffset"
+      /><field value="0.4" type="System.Single" id="_selectionColorOffset" /></reference><reference
+      type="RAIN.Entities.Aspects.VisualAspect" refcount="1" id="1"><field value="True"
+      type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
+      id="_aspectName" /><field type="UnityEngine.Transform" id="_mountPoint" gameobject="-1"
+      /><field value="0.1" type="System.Single" id="_size" /><field value="0,0,0"
+      type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
+      id="_angleOffset" /></reference></references></component>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+--- !u!114 &11400050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 220721487, guid: 8da89e8b4b3186d4fa9588ae08dc0e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _serializedData: <component version="1.0" type="RAIN.Entities.EntityRig"><fields><field
+      value="True" type="System.Boolean" id="_showVisual" /><field value="True" type="System.Boolean"
+      id="_useUnityMessages" /><field type="RAIN.Entities.Entity" reference="0" id="_entity"
+      /></fields><references><reference type="RAIN.Entities.Entity" refcount="1" id="0"><field
+      value="True" type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
+      id="entityName" /><field type="UnityEngine.GameObject" id="form" gameobject="-1"
+      /><field type="System.Collections.Generic.List" id="_aspects" elementtype="RAIN.Entities.Aspects.RAINAspect"><field
+      type="RAIN.Entities.Aspects.VisualAspect" reference="1" id="element0" /></field><field
+      type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Entities.Elements.CustomEntityElement"
+      childrenvisible="False" /><field value="0,0.6,0,1" type="UnityEngine.Color"
+      id="_aspectColor" /><field value="-0.5" type="System.Single" id="_outlineColorOffset"
+      /><field value="0.4" type="System.Single" id="_selectionColorOffset" /></reference><reference
+      type="RAIN.Entities.Aspects.VisualAspect" refcount="1" id="1"><field value="True"
+      type="System.Boolean" id="_isActive" /><field value="Chunk" type="System.String"
+      id="_aspectName" /><field type="UnityEngine.Transform" id="_mountPoint" gameobject="-1"
+      /><field value="0.1" type="System.Single" id="_size" /><field value="0,0,0"
+      type="UnityEngine.Vector3" id="_positionOffset" /><field value="0,0,0" type="UnityEngine.Vector3"
+      id="_angleOffset" /></reference></references></component>
+    _serializedGameObjects: []
+    _serializedCustomData: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
