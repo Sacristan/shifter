@@ -32,7 +32,7 @@ public class Character : MonoBehaviour {
 	void Update () {
 
 		move = new Vector2 (Input.GetAxis("Horizontal")*Time.deltaTime*correctedSpeed,(Jump() ? jumpStrength:0));
-		//move.x *= detectCloseWalls()*10F;
+		//move.x *= detectCloseWalls()*10F;    
 		rig2D.AddForce(move);
 		Vector3 velocity = rig2D.velocity;
 		velocity.x = Mathf.Clamp (rig2D.velocity.x,-10F, 10F);
