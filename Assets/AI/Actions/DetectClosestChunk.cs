@@ -25,7 +25,6 @@ public class DetectClosestChunk : RAINAction
 		if (Physics.Raycast (ai.Body.transform.position, -Vector3.up, out hit, 5.0f)) {
 			GameObject go = hit.collider.gameObject;
 			if(go == null) return ActionResult.FAILURE;
-//			Debug.Log(go.name);
 
 			WaypointRig wRig = go.GetComponentInChildren<WaypointRig>();
 
@@ -34,7 +33,6 @@ public class DetectClosestChunk : RAINAction
 				return ActionResult.SUCCESS;
 			}
 			else return ActionResult.FAILURE;
-			return ActionResult.SUCCESS;
 		}
 		return ActionResult.FAILURE;
 	}
