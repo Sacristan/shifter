@@ -272,8 +272,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
-  aiRig: {fileID: 0}
-  jumpTime: 2
 --- !u!65 &776914101
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -506,6 +504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpStrength: 300
+  vies: []
 --- !u!212 &1080400930
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -569,6 +568,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422b7abf6b94506409551c92b6a3ed6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walk: {fileID: 0}
+  Jumps: []
 --- !u!1 &1080471438
 GameObject:
   m_ObjectHideFlags: 0
