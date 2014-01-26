@@ -14,4 +14,8 @@ public class AIDamageController : MonoBehaviour {
 	void Update(){
 		aiRig.AI.WorkingMemory.SetItem("health", hitPoints);
 	}
+
+	void ApplyDamage(float dmg){
+		hitPoints = Mathf.Clamp (hitPoints - dmg, 0.0f, hitPoints);
+	}
 }
