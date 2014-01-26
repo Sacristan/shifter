@@ -15,7 +15,7 @@ public class ChunkSpawner : MonoBehaviour {
 
 	void Awake(){
 
-		currentPhase = phaseStyles [0]; //i force it to basic phase until i get more textures
+		currentPhase = phaseStyles [1]; //i force it to basic phase until i get more textures
 
 	}
 

@@ -116,6 +116,17 @@ MonoBehaviour:
     - {fileID: 2100000, guid: c0778e363427193429f2e27d659d4dc5, type: 2}
     - {fileID: 2100000, guid: 9b562ded78eabaf47b5de0d45358561c, type: 2}
     - {fileID: 2100000, guid: d102cb59b1836d142908315f648ea8ce, type: 2}
+  - seed: 3
+    chunksTypes:
+    - {fileID: 100066, guid: 0e00e743635bd20478567440e0f0a4d6, type: 2}
+    - {fileID: 100090, guid: b7a927bbe4168c64c9b81f94bb4cfbaf, type: 2}
+    - {fileID: 100092, guid: 4d4ba1cc92734d9468028230ec3fa89c, type: 2}
+    terrainMaterials:
+    - {fileID: 2100000, guid: 1a11a1835ac35e34d986defb493165e3, type: 2}
+    - {fileID: 2100000, guid: f03692abb97105644856b0722bb16c98, type: 2}
+    - {fileID: 2100000, guid: 19ed419a290706047ac67be261d6ab25, type: 2}
+    - {fileID: 2100000, guid: 53180ae339736c941ad504ddecb4b34a, type: 2}
+    - {fileID: 2100000, guid: 85bff4ed2f54a7d44bbe04467092322c, type: 2}
 --- !u!4 &37097593
 Transform:
   m_ObjectHideFlags: 0
@@ -570,15 +581,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
       propertyPath: phaseStyles.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
       propertyPath: phaseStyles.Array.data[0].chunksTypes.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: phaseStyles.Array.data[1].chunksTypes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
       propertyPath: phaseStyles.Array.data[0].terrainMaterials.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: phaseStyles.Array.data[1].terrainMaterials.Array.size
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -764,6 +783,42 @@ Prefab:
       propertyPath: Levellength
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: phaseStyles.Array.data[1].seed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: phaseStyles.Array.data[1].chunksTypes.Array.data[0]
+      value: 
+      objectReference: {fileID: 100066, guid: 0e00e743635bd20478567440e0f0a4d6, type: 2}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: phaseStyles.Array.data[1].chunksTypes.Array.data[1]
+      value: 
+      objectReference: {fileID: 100090, guid: b7a927bbe4168c64c9b81f94bb4cfbaf, type: 2}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: phaseStyles.Array.data[1].chunksTypes.Array.data[2]
+      value: 
+      objectReference: {fileID: 100092, guid: 4d4ba1cc92734d9468028230ec3fa89c, type: 2}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: phaseStyles.Array.data[1].terrainMaterials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a11a1835ac35e34d986defb493165e3, type: 2}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: phaseStyles.Array.data[1].terrainMaterials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: f03692abb97105644856b0722bb16c98, type: 2}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: phaseStyles.Array.data[1].terrainMaterials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 19ed419a290706047ac67be261d6ab25, type: 2}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: phaseStyles.Array.data[1].terrainMaterials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 53180ae339736c941ad504ddecb4b34a, type: 2}
+    - target: {fileID: 11400000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
+      propertyPath: phaseStyles.Array.data[1].terrainMaterials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 85bff4ed2f54a7d44bbe04467092322c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7cfc3fac61331e3438f325cebf68f86e, type: 2}
   m_RootGameObject: {fileID: 37097591}
